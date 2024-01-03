@@ -29,9 +29,9 @@ const data = [
     
   ];
   const MyCarousel = () => {
-    const renderItem = ({ item, index }) => {
+    const renderItem = ({ item }) => {
       return (
-        <View className='bg-yellow-500 p-4 w-[100vw]'>
+        <View className='bg-yellow-500 p-4 w-[100vw]' >
           <Text className='text-white text-lg mb-2'>{item.title}</Text>
           <Image source={{ uri: item.url }} style={{  height: 200 }} className='w-full rounded-lg' />
         </View>

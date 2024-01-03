@@ -10,9 +10,9 @@ const Services = ({title, item}) => {
       <Text className="text-2xl  font-bold text-white">{title}</Text>
       <View className="flex flex-row justify-around items-center mt-1">
         {
-          item.map(({name,url}) => {
+          item.map(({name,url},index) => {
             return (
-              <View className='flex flex-col items-center '>
+              <View className='flex flex-col items-center ' key={index}>
                 <Image
                   source={{uri:url}}
                   style={{width: wp(15), height: wp(15)}}
