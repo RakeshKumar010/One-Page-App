@@ -44,7 +44,6 @@ const HomePage = () => {
   return (
     <View className="flex flex-1 w-full bg-yellow-500">
       <Header />
-      {/* <Text>HomePage</Text> */}
       <MyCarousel />
       <Services title="services" item={servicesItem} />
       <Services title="Clients" item={clientItem}/>

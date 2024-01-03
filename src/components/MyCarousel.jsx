@@ -26,14 +26,14 @@ const data = [
       title: 'Image 5',
       url: 'https://picsum.photos/id/5/200/300',
     },
-    // add more items as needed
+    
   ];
   const MyCarousel = () => {
     const renderItem = ({ item, index }) => {
       return (
         <View className='bg-yellow-500 p-4 w-[100vw]'>
           <Text className='text-white text-lg mb-2'>{item.title}</Text>
-          <Image source={{ uri: item.url }} style={{  height: 200 }} className='w-full' />
+          <Image source={{ uri: item.url }} style={{  height: 200 }} className='w-full rounded-lg' />
         </View>
       );
     };

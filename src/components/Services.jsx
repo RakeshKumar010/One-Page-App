@@ -7,7 +7,7 @@ import {
 const Services = ({title, item}) => {
   return (
     <View className="my-5 mx-3">
-      <Text className="text-2xl  font-bold">{title}</Text>
+      <Text className="text-2xl  font-bold text-white">{title}</Text>
       <View className="flex flex-row justify-around items-center mt-1">
         {
           item.map(({name,url}) => {
@@ -18,7 +18,7 @@ const Services = ({title, item}) => {
                   style={{width: wp(15), height: wp(15)}}
                   className="rounded-full"
                 />
-                <Text>{name}</Text>
+                <Text className='text-white'>{name}</Text>
               </View>
             );
           })}
